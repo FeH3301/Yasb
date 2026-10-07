@@ -6642,3 +6642,19 @@ expected <block end>, but found '<scalar>'
 2026-10-06 17:38:09,150 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
 2026-10-06 17:38:09,162 [INFO] [MainThread] [root/update_service.py:434]: Background update checker started
 2026-10-06 17:38:09,177 [INFO] [SystrayHook] [systray_hook/systray_hook.py:193]: Injecting into Explorer (PID: 6940)
+2026-10-06 21:02:14,280 [WARNING] [MainThread] [deprecation/deprecation.py:161]: [DEPRECATED] BarBlurEffect: 'acrylic' - No longer supported and can be removed from the config.
+2026-10-06 21:02:14,289 [INFO] [MainThread] [root/controller.py:21]: Reloading Application because of config change.
+2026-10-06 21:02:14,390 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-10-06 21:02:14,409 [INFO] [MainThread] [root/bar_manager.py:93]: Successfully loaded updated config and re-initialised all bars.
+2026-10-06 21:02:14,478 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping SystemEventListener...
+2026-10-06 21:02:14,928 [INFO] [MainThread] [root/log.py:103]: YASB v2.0.7
+2026-10-06 21:02:14,929 [INFO] [CLIPipeServer] [cli_server/cli_server.py:216]: CLI server started v1.1.7
+2026-10-06 21:02:14,929 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-10-06 21:02:14,991 [WARNING] [MainThread] [deprecation/deprecation.py:161]: [DEPRECATED] BarBlurEffect: 'acrylic' - No longer supported and can be removed from the config.
+2026-10-06 21:02:15,798 [INFO] [yasb-audio-visualizer] [root/loopback.py:728]: Audio visualizer: loopback capture open (48000 Hz, 2 ch, 32-bit float)
+2026-10-06 21:02:15,948 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-10-06 21:02:16,048 [INFO] [MainThread] [root/bar_manager.py:103]: Starting SystemEventListener...
+2026-10-06 21:02:16,052 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\usuario\.config\yasb
+2026-10-06 21:02:16,053 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-10-06 21:02:16,081 [INFO] [MainThread] [root/update_service.py:434]: Background update checker started
+2026-10-06 21:02:16,128 [INFO] [SystrayHook] [systray_hook/systray_hook.py:193]: Injecting into Explorer (PID: 6940)
