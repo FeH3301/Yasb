@@ -48,8 +48,8 @@
 
 /* Bar */
 .yasb-bar {
-    background-color: rgba(0, 0, 0, 0.15); /*background-color: rgba(0, 0, 0, 0.15);*/
-    border-bottom: 0px solid var(--yasb-bar-border);
+    background-color: rgba(24, 24, 24, 0.8); /*background-color: rgba(0, 0, 0, 0.15);*/
+    border-bottom: 1px solid rgba(73, 67, 67, 0.500);
     padding: 0px 8px 0px 8px;
     transition: background-color 0.3s ease;
 }
@@ -167,34 +167,13 @@
     font-weight: 600;
     padding-bottom: 2px;
 }
-/* Home Menu */
-.home-widget:hover {
-    background-color: var(--yasb-white-alpha-08);
-}
-.home-menu {
-    background-color: var(--yasb-popup-bg);
-}
-.home-menu .menu-item {
-    color: var(--yasb-fg);
-    padding: 8px 48px 8px 16px;
-    font-family: var(--system-font);
-    font-weight: 600;
-}
-.home-menu .menu-item:hover {
-    background-color: rgba(128, 130, 158, 0.15);
-    color: #fff;
-}
-.home-menu .separator {
-    max-height: 1px;
-    background-color: rgba(128, 130, 158, 0.3);
-}
-.home-widget .icon {
-    font-family: var(--icons-font-fallback);
-    font-size: 18px;
-    margin-top: -1;
-}
-
 /* Clock */
+.clock-widget .icon {
+    font-family: var(--icons-font-fallback);
+    font-size: 15px;
+    margin-top: 0px;
+    margin-right: 6px;
+}
 .clock-widget .icon.alarm {
     color: var(--yasb-accent);
     padding-left: 4px;
@@ -385,163 +364,6 @@
     background-color: var(--yasb-white-alpha-10);
 }
 
-/* Power Menu */
-.power-menu-widget:hover {
-    background-color: var(--yasb-white-alpha-08);
-}
-.power-menu-compact {
-    min-width: 260px;
-    background-color: var(--yasb-popup-bg);
-}
-.power-menu-compact .profile-info {
-    padding: 24px 0 24px 0;
-}
-.power-menu-compact .profile-info .profile-username {
-    font-size: 16px;
-    font-weight: 600;
-    color: var(--yasb-fg);
-    font-family: var(--system-font);
-    margin-top: 4px;
-}
-.power-menu-compact .profile-info .profile-account-type {
-    font-size: 12px;
-    color: var(--yasb-accent-fg);
-    font-weight: 600;
-    margin-top: 8px;
-    font-family: var(--system-font);
-    background-color: var(--yasb-accent);
-    padding: 2px 6px 3px 6px;
-    border-radius: 4px;
-}
-.power-menu-compact .profile-info .profile-email {
-    font-size: 12px;
-    color: var(--yasb-fg-muted);
-    margin-top: 2px;
-    font-family: var(--system-font);
-}
-.power-menu-compact .manage-accounts {
-    font-size: 12px;
-    background-color: var(--yasb-white-alpha-08);
-    font-family: var(--system-font);
-    font-weight: 600;
-    padding: 3px 12px 4px 12px;
-    color: var(--yasb-fg);
-    margin-top: 16px;
-    border-radius: 4px;
-    border: 1px solid var(--yasb-white-alpha-10);
-}
-.power-menu-compact .manage-accounts:hover {
-    background-color: var(--yasb-white-alpha-15);
-}
-.power-menu-compact .buttons {
-    margin: 0 12px 12px 12px;
-    border-radius: 8px;
-    background-color: rgba(0, 0, 0, 0.2);
-    border: 1px solid var(--yasb-white-alpha-10);
-}
-.power-menu-compact .button {
-    padding: 8px 16px;
-    background-color: transparent;
-    border: none;
-    border-radius: 0;
-}
-.power-menu-compact .button.hover {
-    background-color: var(--yasb-white-alpha-03);
-}
-.power-menu-compact .button.lock.hover {
-    border-top-right-radius: 8px;
-    border-top-left-radius: 8px;
-}
-.power-menu-compact .button.shutdown.hover {
-    border-bottom-right-radius: 8px;
-    border-bottom-left-radius: 8px;
-}
-.power-menu-compact .button .icon {
-    font-size: 16px;
-    font-weight: 400;
-    color: var(--yasb-fg-muted);
-    padding-right: 10px;
-    min-width: 20px;
-}
-.power-menu-compact .button .label {
-    font-size: 13px;
-    font-weight: 500;
-    font-family: var(--system-font);
-    color: var(--yasb-fg-muted);
-}
-.power-menu-compact .icon.hover,
-.power-menu-compact .label.hover {
-    color: var(--yasb-fg);
-}
-.power-menu-widget .icon {
-    font-family: var(--icons-font-fallback);
-    font-size: 16.5px;
-    margin-top: 0px;
-}
-
-/* Volume */
-.volume-widget:hover {
-    background-color: var(--yasb-white-alpha-08);
-}
-.audio-menu {
-    background-color: var(--yasb-popup-bg);
-    min-width: 300px;
-}
-.audio-menu .system-volume-container .volume-slider {
-    border: none;
-}
-.audio-menu .audio-container .device {
-    background-color: transparent;
-    border: none;
-    padding: 6px 8px 6px 4px;
-    margin: 2px 0;
-    font-size: 12px;
-    border-radius: 4px;
-}
-.audio-menu .audio-container .device.selected {
-    background-color: var(--yasb-white-alpha-08);
-}
-.audio-menu .audio-container .device:hover {
-    background-color: var(--yasb-white-alpha-06);
-}
-.audio-menu .toggle-apps {
-    background-color: transparent;
-    border: none;
-    padding: 0;
-    margin: 0;
-    min-height: 24px;
-    min-width: 24px;
-    border-radius: 4px;
-    font-family: var(--icons-font);
-}
-.audio-menu .toggle-apps.expanded {
-    background-color: var(--yasb-white-alpha-10);
-}
-.audio-menu .toggle-apps:hover {
-    background-color: var(--yasb-white-alpha-15);
-}
-.audio-menu .apps-container {
-    padding: 8px;
-    margin-top: 20px;
-    border-radius: 8px;
-    background-color: var(--yasb-white-alpha-06);
-}
-.audio-menu .apps-container .app-volume .app-icon-container {
-    min-width: 40px;
-    min-height: 40px;
-    max-width: 40px;
-    max-height: 40px;
-    border-radius: 6px;
-    margin-right: 8px;
-}
-.audio-menu .apps-container .app-volume .app-icon-container:hover {
-    background-color: var(--yasb-white-alpha-10);
-}
-.volume-widget .icon {
-    font-family: var(--icons-font-fallback);
-    font-size: 16px;
-    margin-top: 1px;
-}
 /* WiFi */
 .wifi-widget:hover {
     background-color: var(--yasb-white-alpha-08);
@@ -578,7 +400,7 @@
     border-bottom: 1px solid var(--yasb-white-alpha-10);
 }
 .wifi-menu .wifi-list {
-    background-color: var(--yasb-dialog-bg);
+    background: transparent;
     margin-right: 3px;
 }
 .wifi-menu .wifi-item {
@@ -667,8 +489,10 @@
 }
 .wifi-widget .widget-container .icon {
     font-family: var(--icons-font-fallback);
-    font-size: 16px;
+    font-size: 17px;
     margin-top: 1px;
+    margin-left: 3px;
+    margin-right: 3px;
 }
 /* Language */
 .language-menu {
@@ -734,6 +558,8 @@
 }
 .language-widget .widget-container .label {
     text-transform: uppercase;
+    padding: 5px;
+    margin-top: -2px;
 }
 /* CPU */
 .cpu-widget:hover {
@@ -885,204 +711,29 @@
     font-family: var(--system-font);
     padding: 0 4px 12px 4px;
 }
-/* Quick Launch */
-.quick-launch-widget:hover {
-    background-color: var(--yasb-white-alpha-08);
-}
-.quick-launch-popup .container {
-    background-color: var(--yasb-popup-bg);
-}
-.quick-launch-popup .search {
-    padding: 12px 16px;
-    background-color: transparent;
-    border-bottom: 1px solid var(--yasb-white-alpha-15);
-}
-.quick-launch-popup .search .loader-line {
-    color: #449bff;
-}
-.quick-launch-popup .search .search-icon {
-    font-family: 'Segoe Fluent Icons';
-    font-size: 18px;
-    color: var(--yasb-fg);
-    padding-right: 8px;
-    min-width: 18px;
-}
-.quick-launch-popup .search .search-submit-icon {
-    font-family: 'Segoe Fluent Icons';
-    font-size: 18px;
-    color: var(--yasb-fg);
-    min-width: 18px;
-}
-.quick-launch-popup .search .search-input {
-    background: transparent;
-    border: none;
-    color: var(--yasb-fg);
-    font-size: 16px;
-    font-family: var(--system-font);
-    font-weight: 400;
-    padding: 4px 0;
-}
-.quick-launch-popup .search .prefix {
-    background: #2167d8;
-    border-radius: 6px;
-    color: #ffffff;
-    padding: -2px 8px 0px 8px;
-    margin-top: 2px;
-    margin-right: 4px;
-    font-size: 13px;
-    font-weight: 600;
-    font-family: var(--system-font);
-    max-height: 28px;
-}
-.quick-launch-popup .results {
-    background: transparent;
-    padding: 8px;
-}
-.quick-launch-popup .results-list-view {
-    font-size: 14px;
-    font-family: var(--system-font);
-    font-weight: 600;
-    color: var(--yasb-fg);
-}
-.quick-launch-popup .results-list-view .description {
-    color: var(--yasb-fg-muted);
-    font-size: 11px;
-    font-family: var(--system-font);
-    font-weight: 600;
-}
-.quick-launch-popup .results-list-view .separator {
-    color: var(--yasb-fg-muted);
-    font-size: 13px;
-    font-family: var(--system-font);
-    font-weight: 600;
-    padding: 4px 0 4px 12px;
-}
-.quick-launch-popup .results-list-view::item {
-    padding: 4px 12px;
-    border-radius: 8px;
-}
-.quick-launch-popup .results-list-view::item:hover,
-.quick-launch-popup .results-list-view::item:selected {
-    background-color: rgba(128, 130, 158, 0.1);
-}
-.quick-launch-popup .results-empty-text {
-    font-size: 24px;
-    font-family: var(--system-font);
-    color: rgb(255, 255, 255);
-    padding-top: 8px;
-}
-.quick-launch-popup .preview {
-    background: rgba(0, 0, 0, 0);
-    border-left: 1px solid var(--yasb-white-alpha-06);
-}
-.quick-launch-popup .preview .preview-text {
-    font-size: 13px;
-    color: var(--yasb-white-alpha-85);
-    padding: 8px 12px;
-    font-family: var(--system-font);
-    background-color: var(--yasb-white-alpha-03);
-    border: none;
-}
-.quick-launch-popup .preview .preview-image {
-    background-color: var(--yasb-white-alpha-03);
-    padding: 8px 12px;
-}
-.quick-launch-popup .preview .preview-meta {
-    padding: 6px 12px;
-    border-top: 1px solid var(--yasb-white-alpha-06);
-    font-family: var(--system-font);
-}
-.quick-launch-popup .preview .preview-meta .preview-title {
-    font-size: 14px;
-    font-weight: 600;
-    color: rgb(255, 255, 255);
-    font-family: var(--system-font);
-    margin-bottom: 10px;
-    margin-left: -2px;
-}
-.quick-launch-popup .preview .preview-meta .preview-subtitle {
-    font-size: 12px;
-    color: var(--yasb-white-alpha-80);
-    font-family: var(--system-font);
-    padding-bottom: 1px;
-}
-.quick-launch-popup .preview.edit .preview-title {
-    font-size: 13px;
-    font-family: var(--system-font);
-    font-weight: 600;
-    color: #ffffff;
-    padding: 8px 12px 4px 12px;
-}
-.quick-launch-popup .preview.edit .preview-line-edit {
-    background: var(--yasb-white-alpha-06);
-    border: 1px solid var(--yasb-white-alpha-10);
-    border-radius: 4px;
-    color: #ffffff;
-    font-size: 13px;
-    font-family: var(--system-font);
-    padding: 6px 8px;
-    margin: 0 12px;
-}
-.quick-launch-popup .preview.edit .preview-line-edit:focus {
-    border-color: var(--yasb-white-alpha-30);
-}
-.quick-launch-popup .preview.edit .preview-text-edit {
-    background: var(--yasb-white-alpha-06);
-    border: 1px solid var(--yasb-white-alpha-10);
-    border-radius: 4px;
-    color: #ffffff;
-    font-size: 13px;
-    font-family: var(--system-font);
-    padding: 6px 8px;
-    margin: 0 12px;
-}
-.quick-launch-popup .preview.edit .preview-text-edit:focus {
-    border-color: var(--yasb-white-alpha-30);
-}
-.quick-launch-popup .preview.edit .preview-actions {
-    padding: 8px 12px;
-}
-.quick-launch-popup .preview.edit .preview-btn {
-    background: rgb(45, 46, 48);
-    border: none;
-    border-radius: 4px;
-    color: var(--yasb-white-alpha-80);
-    font-size: 12px;
-    font-family: var(--system-font);
-    font-weight: 600;
-    padding: 4px 16px;
-}
-.quick-launch-popup .preview.edit .preview-btn:hover {
-    background: rgb(59, 60, 63);
-}
-.quick-launch-popup .preview.edit .preview-btn.save {
-    background: rgb(12, 81, 190);
-    color: #ffffff;
-}
-.quick-launch-popup .preview.edit .preview-btn.save:hover {
-    background: rgb(19, 90, 204);
-}
 /* Active Windows Title */
 .active-window-widget .icon {
     padding-right: 4px;
     padding-bottom: 0;
 }
+.active-window-widget .label {
+    padding-left: -3px;
+    text-transform: uppercase;
+}
 /* System Tray */
 .systray {
-    padding-right: 2px;
-}
-.systray:hover {
-
+    padding-right: 0px;
+    padding-left: 1px;
+    margin-bottom: 0px;
+    margin-top: 2px;
 }
 .systray .button {
     border-radius: 4px;
-    padding: 3px;
+    padding: 0px;
+    padding-right: 12px;
     background: transparent;
     border: none;
     outline: none;
-}
-.systray .button:hover {
-    background: var(--yasb-white-alpha-20);
 }
 .systray .button.drag-over {
     background: var(--yasb-white-alpha-40);
@@ -1125,11 +776,9 @@
 .systray .widget-container{
     padding: 7px;
     margin-top: -2px;
+    padding-right: 4px;
 }
 /* Open Meteo */
-.open-meteo-widget:hover {
-
-}
 .open-meteo-widget .icon {
     font-family: var(--icons-font-fallback);
     font-size: 18px;
@@ -1291,181 +940,21 @@
 .open-meteo-card .search-results::item:hover {
     background-color: var(--yasb-white-alpha-05);
 }
-/* GitHub */
-.github-widget .icon {
-    font-family: var(--icons-font-fallback);
-}
-.github-widget:hover {
-    background-color: var(--yasb-white-alpha-08);
-}
-.github-menu {
-    background-color: var(--yasb-popup-bg);
-    height: 700px;
-    min-height: 0;
-    min-width: 500px;
-}
-.github-menu .header {
-    font-size: 18px;
-    font-weight: 400;
-    font-family: var(--system-font);
-    padding: 12px 0 8px 12px;
-    color: white;
-}
-.github-menu .footer {
-    font-size: 12px;
-    padding: 8px 8px 8px 8px;
-}
-.github-menu .footer .label {
-    color: #9399b2;
-    font-family: var(--system-font);
-}
-.github-menu .footer .label:hover {
-    color: #b5b9c7;
-}
-.github-menu .contents {
-    background-color: transparent;
-}
-.github-menu .contents .section-header {
-    font-family: var(--system-font);
-    font-size: 16px;
-    margin: 16px 16px 8px 16px;
-    color: #dbe0f1;
-}
-.github-menu .contents .section {
-    margin: 0 12px 0 12px;
-    background-color: rgba(0, 0, 0, 0.2);
-    border: 1px solid var(--yasb-white-alpha-10);
-    border-radius: 14px;
-}
-.github-menu .contents .item {
-    padding: 10px 0;
-}
-.github-menu .contents .item .comment-count {
-    font-family: var(--system-font);
-    padding-right: 12px;
-    font-weight: 600;
-    color: #747d86;
-}
-.github-menu .contents .item .comment-icon {
-    font-size: 14px;
-    padding-top: 4px;
-    padding-right: 6px;
-    color: #747d86;
-    font-family: var(--icons-font);
-}
-.github-menu .contents .item.first {
-    border-top: none;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-}
-.github-menu .contents .item.last {
-    border-bottom: none;
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
-}
-.github-menu .contents .item:hover {
-    background-color: var(--yasb-white-alpha-03);
-}
-.github-menu .contents .item .title,
-.github-menu .contents .item .description {
-    color: #9aa0a5;
-    font-family: var(--system-font);
-}
-.github-menu .contents .item .title {
-    font-size: 14px;
-    font-weight: 600;
-    margin-bottom: 1px;
-}
-.github-menu .contents .item .description {
-    font-size: 12px;
-    font-weight: 600;
-    margin-top: 1px;
-    margin-left: 1px;
-    color: #878c91;
-}
-.github-menu .contents .item.new .title,
-.github-menu .contents .item.new .description {
-    color: #ffffff;
-}
-.github-menu .contents .item .icon {
-    font-size: 18px;
-    color: #848992;
-    min-width: 36px;
-    max-width: 36px;
-    padding-left: 8px;
-    font-family: var(--icons-font-fallback);
-}
-.github-menu .contents .item .icon.issue {
-    color: #3fb950;
-}
-.github-menu .contents .item .icon.issue.closed {
-    color: #ab7df8;
-}
-.github-menu .contents .item .icon.pullrequest {
-    color: #3fb950;
-}
-.github-menu .contents .item .icon.pullrequest.merged {
-    color: #ab7df8;
-}
-.github-menu .contents .item .icon.pullrequest.draft {
-    color: #848992;
-}
-.github-menu .contents .item .icon.discussion {
-    color: #848992;
-}
-.github-menu .contents .item .icon.discussion.answered {
-    color: #3fb950;
-}
-.github-menu .contents .item .icon.release {
-    color: #848992;
-}
-.github-menu .contents .item .icon.checksuite {
-    color: #f38ba8;
-}
-/* Microphone */
-.microphone-widget:hover {
-    background-color: var(--yasb-white-alpha-08);
-}
-.microphone-widget .icon {
-    font-size: 14px;
-}
-.microphone-widget .icon.no-device {
-    color: #a3a3a3;
-    font-size: 14px;
-}
-.microphone-menu {
-    background-color: var(--yasb-popup-bg);
-    min-width: 300px;
-}
-.microphone-menu .system-volume-container .volume-slider {
-    border: none;
-}
-.microphone-menu .microphone-container .device {
-    background-color: transparent;
-    border: none;
-    padding: 6px 8px 6px 4px;
-    margin: 2px 0;
-    font-size: 12px;
-    border-radius: 4px;
-}
-.microphone-menu .microphone-container .device.selected {
-    background-color: var(--yasb-white-alpha-08);
-}
-.microphone-menu .microphone-container .device:hover {
-    background-color: var(--yasb-white-alpha-06);
-}
 /* Media */
 
 .media-widget {
     padding: 4;
+    padding-top: 2px;
     margin: 0;
 }
 .media-widget .label {
-    padding: 0px 0px;
+    padding-right: 14px;
+    padding-left: 14px;
+    text-transform: uppercase;
 }
 .media-widget .btn {
     color: var(--yasb-fg-muted);
-    padding: 0 4px;
+    padding:  4px;
     margin: 0;
     font-family: 'Segoe Fluent Icons';
     font-weight: 400;
@@ -1615,23 +1104,23 @@
 }
 .notification-widget .icon {
     font-family: var(--icons-font-fallback);
-    font-size: 14px;
-    margin-left: 1px;
+    font-size: 16px;
+    margin-left: 4px;
 }
 .notification-widget .icon.new-notification {
     font-family: var(--icons-font-fallback);
 }
 .notification-widget .label.new-notification {
     color: #ffffff77;
-    margin-top: -14px;
-    padding: 1px;
+    margin-bottom: 13px;
+    padding: 2px;
     font-size: 10px;
 }
 
 /* POPUP WINDOW */
 .control-center-menu {
     background: var(--yasb-popup-bg);
-    min-width: 360px;
+    min-width: 375px;
 }
 
 /* SECTIONS */
@@ -1910,171 +1399,43 @@ which is 16 pixels same as the other sections. */
 }
 .control-center-widget .icon {
     font-family: var(--icons-font-fallback);
-    font-size: 16px;
-    margin-bottom: 1px;
-    padding: 2px;
+    font-size: 17px;
+    margin-bottom: 0px;
+    padding: 4px;
 }
 .control-center-widget:hover {
     background-color: var(--yasb-white-alpha-10);
 }
 
-/* Launchpad - customize this block */
-.launchpad-widget {
-    padding: 0 6px;
+/* win_button */
+
+.win-button-widget {
+    padding-bottom: 2px;
 }
-.launchpad-widget:hover {
-    background-color: var(--yasb-white-alpha-08);
+/* command-palette */
+.command-palette-widget .widget-container .icon {
+    font-family: var(--icons-font-fallback);
+    font-size: 15px;
+    margin-top: 0px;
+    padding: 4px;
 }
-.launchpad-widget .icon {
-    color: var(--yasb-accent);
-}
-.launchpad .launchpad-container {
-    background-color: var(--yasb-dialog-bg);
-}
-.launchpad .search-container {
-    background-color: var(--yasb-dialog-surface);
-    border-bottom: 1px solid var(--yasb-white-alpha-10);
-    min-height: 64px;
-    padding: 0 16px;
-}
-.launchpad .search-input {
-    background-color: var(--yasb-white-alpha-05);
-    border: 1px solid var(--yasb-white-alpha-15);
-    border-radius: 8px;
-    color: var(--yasb-fg);
-    font-family: var(--system-font);
-    font-size: 14px;
-    min-height: 32px;
-    max-height: 32px;
-    max-width: 480px;
-    padding: 4px 10px;
-}
-.launchpad .search-input:focus {
-    border: 1px solid var(--yasb-accent);
-}
-.launchpad .launchpad-scroll-area {
-    background-color: transparent;
-    border: none;
-}
-.launchpad .app-icon,
-.launchpad .group-icon {
-    background-color: transparent;
-    border: 2px solid transparent;
-    border-radius: 10px;
-    margin: 16px 6px 6px;
-    min-width: 96px;
-    max-width: 96px;
-    min-height: 96px;
-    max-height: 96px;
-    padding-top: 8px;
-}
-.launchpad .app-icon:hover,
-.launchpad .app-icon:focus,
-.launchpad .group-icon:hover,
-.launchpad .group-icon:focus {
-    background-color: var(--yasb-white-alpha-08);
-    border-color: var(--yasb-accent);
-}
-.launchpad .app-icon .title,
-.launchpad .group-icon .title {
-    color: var(--yasb-fg);
-    font-family: var(--system-font);
-    font-size: 12px;
-    font-weight: 600;
-    margin-top: 4px;
-}
-.launchpad .app-icon.url .title {
-    color: var(--yasb-accent);
-}
-.launchpad .app-icon .icon {
-    padding: 0;
-    margin: 0;
-}
-.launchpad .group-icon .group-icon-container {
-    background-color: var(--yasb-dialog-surface);
-    border: 1px solid var(--yasb-white-alpha-10);
-    border-radius: 8px;
-}
-.launchpad .drop-overlay {
-    background-color: var(--yasb-dialog-bg);
-    border: 4px dashed var(--yasb-accent);
-}
-.launchpad .drop-overlay .text {
-    color: var(--yasb-fg);
-    font-family: var(--system-font);
-    font-size: 48px;
-    font-weight: 600;
-}
-.launchpad .context-menu {
-    background-color: var(--yasb-bar-bg);
-    border: 1px solid var(--yasb-white-alpha-10);
-    border-radius: 6px;
-    color: var(--yasb-fg);
-    font-family: var(--system-font);
-    font-size: 12px;
-    font-weight: 600;
-    padding: 4px 0;
-}
-.launchpad .context-menu::item {
-    background-color: transparent;
-    border-radius: 4px;
-    margin: 2px 6px;
-    min-width: 100px;
-    padding: 6px 12px;
-}
-.launchpad .context-menu::item:selected,
-.launchpad .context-menu::item:pressed {
+.command-palette-widget:hover {
     background-color: var(--yasb-white-alpha-10);
-    color: var(--yasb-fg);
 }
-.launchpad .context-menu::separator {
-    height: 1px;
-    background-color: var(--yasb-white-alpha-15);
-    margin: 4px 8px;
+/* windows-workspaces */
+.windows-desktops {
+    padding: 0 -5px 0 4px;
 }
-.launchpad .app-dialog {
-    background-color: var(--yasb-dialog-bg);
-    color: var(--yasb-fg);
-    font-family: var(--system-font);
+.windows-desktops .widget-container {
+    margin: 0px 0px 0px 0px;
+    border-radius: 12px;
 }
-.launchpad .app-dialog .title-field,
-.launchpad .app-dialog .path-field,
-.launchpad .app-dialog .icon-field,
-.launchpad .app-dialog .group-field {
-    background-color: var(--yasb-dialog-surface);
-    border: 1px solid var(--yasb-white-alpha-15);
-    border-radius: 4px;
-    color: var(--yasb-fg);
-    font-family: var(--system-font);
-    min-height: 30px;
-    padding: 0 6px;
-}
-.launchpad .app-dialog .title-field:focus,
-.launchpad .app-dialog .path-field:focus,
-.launchpad .app-dialog .icon-field:focus {
-    border-bottom-color: var(--yasb-accent);
-}
-.launchpad .app-dialog .button {
-    background-color: var(--yasb-surface-alt);
+.windows-desktops .ws-btn {
+    color: rgb(128, 128, 128);
     border: none;
-    border-radius: 4px;
-    color: var(--yasb-fg);
-    font-family: var(--system-font);
-    font-weight: 600;
-    min-height: 28px;
-    min-width: 80px;
-    padding: 0 8px;
+    font-size: 12px;
+    margin-right: 12;
 }
-.launchpad .app-dialog .button:hover,
-.launchpad .app-dialog .button:focus {
-    background-color: var(--yasb-white-alpha-15);
-}
-.launchpad .app-dialog .button.add,
-.launchpad .app-dialog .button.save {
-    background-color: var(--yasb-accent);
-    color: var(--yasb-accent-fg);
-}
-.launchpad .app-dialog .button.delete {
-    background-color: #c42b1c;
-    color: var(--yasb-fg);
+.windows-desktops .ws-btn.active {
+    color: rgb(255, 255, 255);
 }
